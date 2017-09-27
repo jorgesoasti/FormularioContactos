@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Bundle parametros = getIntent().getExtras();
+
         Button btnSiguiente = findViewById(R.id.btnBotonSiguiente);
 
         btnSiguiente.setOnClickListener(new View.OnClickListener() {
@@ -29,9 +31,13 @@ public class MainActivity extends AppCompatActivity {
                 final DatePicker dpFechaNacimiento = findViewById(R.id.dpFechaNacimiento);
                 final EditText edtNombreCompleto = findViewById(R.id.edtNombreCompleto);
                 final EditText edtTelefono = findViewById(R.id.edtTelefono);
+                final EditText edtEmail = findViewById(R.id.edtEmail);
+                final EditText edtDescrip = findViewById(R.id.edtDescripcionContacto);
 
                 String nombre = edtNombreCompleto.getText().toString();
                 String telefono = edtTelefono.getText().toString();
+                String email = edtEmail.getText().toString();
+                String descrip = edtDescrip.getText().toString();
 
                 int anio = dpFechaNacimiento.getYear();
                 int mes = dpFechaNacimiento.getMonth() + 1;
@@ -42,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("Dia", dia);
                 intent.putExtra("Nombre", nombre);
                 intent.putExtra("Telefono", telefono);
+                intent.putExtra("Email", email);
+                intent.putExtra("DescripContacto", descrip);
                 startActivity(intent);
             }
         });

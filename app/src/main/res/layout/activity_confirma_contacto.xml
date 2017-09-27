@@ -39,4 +39,25 @@
         android:layout_height="wrap_content"
         android:text="Telefono"/>
 
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"/>
+
+    <TextView
+        android:id="@+id/tvDescContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción del Contacto"/>
+
+    <Button
+        android:id="@+id/btnBotonEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/editar"
+        android:layout_below="@+id/tvTitulo"
+        android:layout_marginTop="20dp"
+        android:theme="@style/MiBotonRaised"/>
+
 </LinearLayout>
