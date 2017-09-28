@@ -15,7 +15,7 @@
         android:id="@+id/tvTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CONFIRMAR DATOS"
+        android:text="@string/confirmar_datos"
         android:textStyle="bold"
         android:textSize="20sp"
         android:textAlignment="center"
@@ -25,38 +25,37 @@
         android:id="@+id/tvNombreCompleto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nombre Completo"/>
+        android:text="@string/nombre_completo"/>
 
     <TextView
         android:id="@+id/tvFechaNacimiento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fecha de Nacimiento"/>
+        android:text="@string/fecha_nacimiento"/>
 
     <TextView
         android:id="@+id/tvTelefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Telefono"/>
+        android:text="@string/telefono"/>
 
     <TextView
         android:id="@+id/tvEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email"/>
+        android:text="@string/email"/>
 
     <TextView
         android:id="@+id/tvDescContacto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Descripción del Contacto"/>
+        android:text="@string/descripcion_contacto"/>
 
     <Button
         android:id="@+id/btnBotonEditar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/editar"
-        android:layout_below="@+id/tvTitulo"
         android:layout_marginTop="20dp"
         android:theme="@style/MiBotonRaised"/>
 
